@@ -2,7 +2,12 @@
 View the full problem and run the test cases at:
 https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 """
-from bst import TreeNode
+class TreeNode(object):
+  def __init__(self, val=0, left=None, right=None):
+    self.val = val
+    self.left = left
+    self.right = right
+
 
 def sortedArrayToBST(nums):
   """
@@ -11,11 +16,11 @@ def sortedArrayToBST(nums):
   """
 
 bst_root = sortedArrayToBST([-10,-3,0,5,9])
-print(bst_root.value)               # 0
-# print(bst_root.left.value)          # -3
-# print(bst_root.left.left.value)     # -10
-# print(bst_root.right.value)         # 9
-# print(bst_root.right.left.value)    # 5
+print(bst_root.val)               # 0
+# print(bst_root.left.val)          # -3
+# print(bst_root.left.left.val)     # -10
+# print(bst_root.right.val)         # 9
+# print(bst_root.right.left.val)    # 5
 # Returns the root of the following binary search tree:
 #       0
 #      / \
