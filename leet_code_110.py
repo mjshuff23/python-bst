@@ -2,7 +2,12 @@
 View the full problem and run the test cases at:
 https://leetcode.com/problems/balanced-binary-tree/
 """
-from bst import TreeNode
+class TreeNode(object):
+  def __init__(self, val=0, left=None, right=None):
+    self.val = val
+    self.left = left
+    self.right = right
+
 
 def isBalanced(root):
   """
